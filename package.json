@@ -1,0 +1,21 @@
+{
+    "type": "module",
+    "name": "natas",
+    "version": "1.0.0",
+    "main": " ",
+    "scripts": {
+        "start": "tsx categorize.ts",
+        "debug": "tsx categorize.ts --inspect --inspect-brk"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/node": "^20.4.5"
+    },
+    "dependencies": {
+        "cheerio": "1.0.0-rc.12",
+        "tsx": "^3.12.7",
+        "undici": "^5.22.1"
+    }
+}

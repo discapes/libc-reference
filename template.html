@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <base href="https://man7.org/linux/man-pages/" target="_blank" />
+    <title>Standard C and POSIX C functions</title>
+    <style>
+        p,
+        ol,
+        ul {
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #fcfcfc;
+            color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        #container {
+            flex-direction: row;
+            gap: 10px;
+            display: flex;
+        }
+
+        .category_outer {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        .category_inner {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .category_heading {
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            display: flex;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .category_inner a {
+            color: #222;
+            text-decoration: none;
+            font-family: monospace;
+        }
+
+        .category_inner a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>C function reference</h1>
+    <p>
+        The purpose of this page is to provide a reference for C library functions.
+        It is based on the man-pages project, and has the following design goals:
+    </p>
+    <ul>
+        <li>Easy to read</li>
+        <li>Shows all functions along with their descriptions</li>
+        <li>Allows searching for any function quickly with CTRL+F</li>
+        <li><b>Clearly indicates whether the function is a part of ISO C,
+                POSIX, or something else</b></li>
+        <li>Links to the appropriate man7.org page <b>in a new tab</b></li>
+    </ul>
+    <p>How this page was generated:
+    <p>
+    <ol>
+        <li>
+            Open the "man-pages (Linux kernel and C library user-space interface
+            documentation)"-section of
+            <a href="https://man7.org/linux/man-pages/dir_by_project.html">man7.org</a>.
+        </li>
+        <li>
+            Copy the lines with links to man2- and man3-pages to descriptions.html.
+        </li>
+        <li>
+            Add a base-tag pointing to https://man7.org/linux/man-pages/ in descriptions.html,
+            and serve the current directory.
+        </li>
+        <li>
+            Download the referenced manpages with
+            <code>wget -rHl1 http://127.0.0.1:5500/descriptions.html</code> and move the man2
+            and man3-folders next to this file.
+        </li>
+        <li>
+            Install dependencies with <code>pnpm install</code> and generate this page with
+            <code>pnpm start</code>
+        </li>
+    </ol>
+
+    <div id="container"></div>
+</body>
+
+</html>
